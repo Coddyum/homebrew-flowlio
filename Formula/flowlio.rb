@@ -1,8 +1,8 @@
 class Flowlio < Formula
   desc "Project manager for AI agents: cross-repo issues, and a waker that closes the loop"
   homepage "https://github.com/Coddyum/flowlio-agents"
-  url "https://github.com/Coddyum/flowlio-agents/archive/refs/tags/v1.0.1.tar.gz"
-  sha256 "0d24c969100123a9a6c1f3430a041d7314ed8bb269ba3520da5b466ecec46544"
+  url "https://github.com/Coddyum/flowlio-agents/archive/refs/tags/v1.0.2.tar.gz"
+  sha256 "55ec3ebc1a3f1184c85a7a734319c50f3696ddad88ab68fca5e1de660cc5b644"
   license "AGPL-3.0-only"
   head "https://github.com/Coddyum/flowlio-agents.git", branch: "main"
 
