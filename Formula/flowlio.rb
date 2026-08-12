@@ -5,13 +5,13 @@
 class Flowlio < Formula
   desc "Project manager for AI agents: cross-repo issues, and a waker that closes the loop"
   homepage "https://github.com/Coddyum/flowlio-agents"
-  version "1.0.9"
+  version "1.0.10"
   license "AGPL-3.0-only"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Coddyum/flowlio-agents/releases/download/v1.0.9/flowlio_1.0.9_darwin_amd64.tar.gz"
-      sha256 "56a8687817eb2bf3885333a8e7b79796d7afa05f48ee2ac39f030b99010fb49c"
+      url "https://github.com/Coddyum/flowlio-agents/releases/download/v1.0.10/flowlio_1.0.10_darwin_amd64.tar.gz"
+      sha256 "c36076697308ec48c4e01e45e257f60a44dd78f00929692520919cc71e97ffe5"
 
       define_method(:install) do
         bin.install "flowlio"
@@ -19,8 +19,8 @@ class Flowlio < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Coddyum/flowlio-agents/releases/download/v1.0.9/flowlio_1.0.9_darwin_arm64.tar.gz"
-      sha256 "97f4aef038c7fa0ec12e1db148e473f17720021531c27fe8e2f3954170ba4b13"
+      url "https://github.com/Coddyum/flowlio-agents/releases/download/v1.0.10/flowlio_1.0.10_darwin_arm64.tar.gz"
+      sha256 "cc066c1713db762eafac153c51da945423478dbebeea319fb994b4c15aa89130"
 
       define_method(:install) do
         bin.install "flowlio"
@@ -31,16 +31,16 @@ class Flowlio < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Coddyum/flowlio-agents/releases/download/v1.0.9/flowlio_1.0.9_linux_amd64.tar.gz"
-      sha256 "d84d1e201613a5f28401e8b771e237930d807ef093d2c6397e4719300a1f5e80"
+      url "https://github.com/Coddyum/flowlio-agents/releases/download/v1.0.10/flowlio_1.0.10_linux_amd64.tar.gz"
+      sha256 "63e68a2a3b37a40fe211dfb23061233a46450dedbcd31bc8eed7d23744460981"
       define_method(:install) do
         bin.install "flowlio"
         bin.install "flowlio-api"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Coddyum/flowlio-agents/releases/download/v1.0.9/flowlio_1.0.9_linux_arm64.tar.gz"
-      sha256 "d379662deff4f1e3a2729e27757f07970c80cb5ee746ac88817932dbe25a68d0"
+      url "https://github.com/Coddyum/flowlio-agents/releases/download/v1.0.10/flowlio_1.0.10_linux_arm64.tar.gz"
+      sha256 "24416730cb3916453da25cf19f85bdbd7f327fecbbadaead6fc00a9414b92d54"
       define_method(:install) do
         bin.install "flowlio"
         bin.install "flowlio-api"
